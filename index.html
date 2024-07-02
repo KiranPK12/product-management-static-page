@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>BuyBliss | Ecommerce Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -17,7 +16,7 @@
     />
   </head>
 
-  <body class="no-scrollbars">
+  <body>
     <nav id="navbar">
       <div class="nav-container">
         <div class="brand">
@@ -29,6 +28,7 @@
           />
           <h2 class="brand-title">BuyBliss</h2>
         </div>
+        <img class="hamburger" src="public/images/menu.png" alt="Menu Icon" height="20px"> 
         <div class="searchbar">
           <div class="search-container">
             <input type="text" placeholder="Search..." />
@@ -82,6 +82,15 @@
                 placeholder="Enter stock"
                 required
               />
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                placeholder="Enter description"
+                required
+              ></textarea>
             </div>
             <div class="form-group">
               <label for="category">Category</label>
@@ -193,10 +202,8 @@
               blanditiis!
             </p>
             <div class="product-bottom-details">
-              <div class="product-price"><small>Rs 479.00</small>Rs 242.99</div>
-              <span class="chip danger">
-                1 Left
-              </span>
+              <div class="product-price"><small>Rs 479.00</small>Rs 242.99 <span class="offer">(10% off)</small></div>
+              <span class="chip danger"> 1 Left </span>
             </div>
           </div>
         </div>
