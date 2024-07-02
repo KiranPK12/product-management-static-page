@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BuyBliss | Ecommerce Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./public/images/android-chrome-512x512.png"
+    />
+  </head>
+
+  <body class="no-scrollbars">
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <img
+            src="/task 1/public/images/brandlogo.png"
+            alt="Company Logo"
+            height="70px"
+            class="brand-logo"
+          />
+          <h2 class="brand-title">BuyBliss</h2>
+        </div>
+        <div class="searchbar">
+          <div class="search-container">
+            <input type="text" placeholder="Search..." />
+            <button type="button">
+              <img
+                src="./public/images/search.png"
+                alt="Search Icon"
+                height="18px"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="user">
+          <button class="login-button">Login</button>
+          <button class="signup-button">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+    <div id="content" class="content-container">
+      <div class="forms-sidebar">
+        <div class="form-container">
+          <form id="productForm">
+            <h2>Add Product</h2>
+            <div class="form-group">
+              <label for="product-name">Product Name</label>
+              <input
+                type="text"
+                id="product-name"
+                name="product-name"
+                placeholder="Enter product name"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                placeholder="Enter price"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="stock">Stock</label>
+              <input
+                type="number"
+                id="stock"
+                name="stock"
+                placeholder="Enter stock"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+                <option value="beauty">Accessories</option>
+                <option value="sports">Sports</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="seller">Seller</label>
+              <select id="seller" name="seller" required>
+                <option value="">Select seller</option>
+                <option value="seller1">Seller 1</option>
+                <option value="seller2">Seller 2</option>
+                <option value="seller3">Seller 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Add Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="product-section">
+        <h1>Products</h1>
+        <div class="product-card">
+          <div class="product-tumb">
+            <img src="https://picsum.photos/2400/800" alt="Products" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Toys</span>
+            <h4><a href="">F1 Hot Wheels</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              blanditiis!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>Rs 479.00</small>Rs 249.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-tumb">
+            <img src="https://picsum.photos/2400/800" alt="Products" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Toys</span>
+            <h4><a href="">F1 Hot Wheels</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              blanditiis!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>Rs 479.00</small>Rs 249.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-tumb">
+            <img src="https://picsum.photos/2400/800" alt="Products" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Toys</span>
+            <h4><a href="">F1 Hot Wheels</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              blanditiis!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>Rs 479.00</small>Rs 249.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-tumb">
+            <img src="https://picsum.photos/2400/800" alt="Products" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Toys</span>
+            <h4><a href="">F1 Hot Wheels</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              blanditiis!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>Rs 479.00</small>Rs 249.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="offer-img" src="./public/images/offer.png" alt="offer" />
+
+          <div class="product-tumb">
+            <img
+              class="product-img"
+              src="https://picsum.photos/2400/800"
+              alt="Products"
+            />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Toys</span>
+            <h4><a href="">F1 Hot Wheels</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              blanditiis!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>Rs 479.00</small>Rs 242.99</div>
+              <span class="chip danger">
+                1 Left
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
