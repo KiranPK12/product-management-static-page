@@ -125,6 +125,13 @@ nav {
   flex-wrap: wrap;
 }
 
+/* Filters */
+/* 
+.filter{
+    margin-top: 20px;
+    height: 20px;
+} */
+
 /* Forms section */
 .forms-sidebar {
   flex: 3;
@@ -246,6 +253,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: auto;
 }
 
 .offer-img {
@@ -281,13 +289,19 @@ nav {
   flex-direction: column;
   position: relative;
 }
+.product-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 .product-catagory {
   display: block;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ccc;
+  color: #3c3636;
 }
 .product-details h4 {
   margin: 10px 0;
@@ -327,16 +341,18 @@ nav {
   font-size: 18px;
   font-weight: 600;
   color: rgb(135, 24, 24);
+  display:flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .product-price small {
   color: #d60e00ef;
-
   color: rgb(169, 124, 46);
-  font-size: 80%;
+  font-size: 70%;
   font-weight: 400;
   text-decoration: line-through;
-  display: block;
+  display: inline-block;
   margin-right: 5px;
 }
 
@@ -344,6 +360,7 @@ nav {
   color: #fbb72c;
   font-size: 80%;
   font-weight: 400;
+  display: inline-block;
 }
 .chip {
   padding: 8px 10px;
@@ -359,6 +376,63 @@ nav {
   background: #da605b;
   color: whitesmoke;
 }
+
+
+.add-to-cart {
+    --color: #fff;
+    --icon: var(--color);
+    --cart: #fff;
+    --dots: #fff;
+     font-family: 'Roboto','shabnam', Arial;
+    --background: #dca47c;
+    --shadow: #{rgba(#00093D, .16)};
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    border-radius: 22px;
+    padding: 12px 20px;
+    font-weight: 500;
+    line-height: 20px;
+    transform: scale(var(--s, .97));
+    box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) var(--shadow);
+    color: var(--color);
+    background: var(--background);
+    transition: transform .3s, box-shadow .3s;
+    .default {
+        padding-left: 16px;
+        position: relative;
+        opacity: var(--o, 1);
+        transform: scale(var(--s, 1));
+        transition: transform .3s, opacity .3s;
+        transition-delay: var(--d, .3s);
+        &:before,
+        &:after {
+            content: '';
+            width: 2px;
+            height: 12px;
+            left: 0;
+            top: 4px;
+            border-radius: 1px;
+            background: var(--icon);
+            position: absolute;
+            transform: rotate(var(--r, 0deg));
+            transition: transform .25s;
+        }
+        &:after {
+            --r: 90deg;
+        }
+    }
+  
+}
+    
+
+
+
+
 
 /* Tablet Responsiveness */
 @media (max-width: 600px) {
