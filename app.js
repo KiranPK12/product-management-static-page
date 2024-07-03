@@ -3,12 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const productSection = document.getElementById("product-section");
   const searchInput = document.getElementById("searchInput");
   const searchButton = document.getElementById("searchButton");
-  const minPriceRange = document.getElementById("min-price-range");
-  const maxPriceRange = document.getElementById("max-price-range");
-  const availabilityFilters = document.querySelectorAll(
-    'input[name="availability"]'
-  );
-  console.log(minPriceRange.value);
   let products = [
     {
       id: 1,
